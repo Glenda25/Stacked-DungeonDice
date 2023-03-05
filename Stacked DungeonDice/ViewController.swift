@@ -9,11 +9,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var dungeonDice: UILabel!
+    
+    @IBOutlet weak var choicelabel: UILabel!
+    
+    @IBOutlet weak var diceChosenLabel: UILabel!
+    
+    @IBOutlet weak var rollResultsLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        print("image did load")
+        diceChosenLabel.text = ""
+        rollResultsLabel.text = ""
+
     }
 
-
+    @IBAction func diceButtonPressed(_ sender: UIButton) {
+    }
+    
 }
 
