@@ -26,6 +26,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func diceButtonPressed(_ sender: UIButton) {
+        // define diceChosenLabel results
+        print("The dice you rolled has \(sender.tag) sides")
+        diceChosenLabel.text = "The dice you rolled has \(sender.tag) sides"
     }
     
 }
