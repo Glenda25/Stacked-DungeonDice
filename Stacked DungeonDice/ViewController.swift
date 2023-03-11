@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var dungeonDice: UILabel!
     
     @IBOutlet weak var choicelabel: UILabel!
@@ -22,13 +22,18 @@ class ViewController: UIViewController {
         print("image did load")
         diceChosenLabel.text = ""
         rollResultsLabel.text = ""
-
+        
     }
-
+    
     @IBAction func diceButtonPressed(_ sender: UIButton) {
         // define diceChosenLabel results and show results
         print("The dice you rolled has \(sender.tag) sides")
-        diceChosenLabel.text = "The dice you rolled has \(sender.tag) sides"
+        diceChosenLabel.text = "\(sender.tag) sides roll!"
+        
+        // dice roll results
+        var x = sender.tag
+        var results2 = Int.random(in: 1...x)
+        rollResultsLabel.text = String(results2)
         
     }
     
