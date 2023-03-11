@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         diceChosenLabel.text = "\(sender.tag) sides roll!"
         
         // dice roll results
-        var x = sender.tag
+        let x = sender.tag
         var results2 = Int.random(in: 1...x)
         rollResultsLabel.text = String(results2)
         
